@@ -19,7 +19,7 @@
 #define DEF_MAX_TOKENS    1024
 
 /* HTML theme bits */
-#define APP_TITLE         "llmserv (no-JS)"
+#define APP_TITLE         "llmserv"
 #define CSS_INLINE \
 "body{max-width:52rem;margin:2rem auto;font:16px/1.35 system-ui,Arial,Helvetica,sans-serif}" \
 "h1{font-weight:600;font-size:1.25rem;margin:0 0 1rem}" \

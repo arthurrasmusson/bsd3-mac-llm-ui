@@ -171,7 +171,7 @@ make install
 --max-tokens N
 --no-network               # disallow outbound connect(); (Linux seccomp kills connect)
 --hmx-command CMD ... --   # use HMX (e.g., qrexec) instead of networking
---trtllm-engine PATH       # TRT engine plan (when compiled with TRT backend)
+--trtllm-engine PATH       # TRT engine (when compiled with TRT backend)
 --local-gui gtk|qt         # desktop UI instead of web
 -v                         # verbose logs to stderr
 ```
@@ -249,7 +249,7 @@ Qt:
 ```sh
 ./llmserv --bind 127.0.0.1:8080 \
   --backend trtllm --no-network \
-  --trtllm-engine /path/to/engine.plan
+  --trtllm-engine /path/to/engine
 ```
 
 ---
