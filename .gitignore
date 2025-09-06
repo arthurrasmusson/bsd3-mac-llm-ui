@@ -1,0 +1,85 @@
+# ===============================
+# BSD3 MAC LLM UI — .gitignore
+# ===============================
+
+# --- Build artifacts (C/C++) ---
+/llmserv
+*.o
+*.lo
+*.a
+*.la
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+
+# Dependency/compile metadata
+*.d
+compile_commands.json
+
+# --- Generated config ---
+# config.h is created from config.def.h by `make` and should not be committed.
+/config.h
+
+# --- Common build dirs ---
+/build/
+/bin/
+/obj/
+/out/
+/dist/
+/Debug/
+/Release/
+
+# --- Logs & temps ---
+*.log
+*.tmp
+tmp/
+
+# --- Coverage / profiling ---
+*.gcno
+*.gcda
+*.gcov
+*.profraw
+*.profdata
+coverage/
+
+# --- Crash dumps ---
+core
+core.*
+vgcore.*
+
+# --- Optional TensorRT-LLM artifacts ---
+# (Engines / plans are large, user-specific binaries)
+engines/
+*.plan
+*.engine
+
+# --- Optional Qt-generated files (if using other build systems) ---
+moc_*
+qrc_*
+ui_*
+
+# --- Editors & IDEs ---
+*.swp
+*.swo
+*.swn
+*~
+.#*
+\#*\#
+.idea/
+.vscode/
+.ccls-cache/
+.clangd/
+# (Keep .clang-format if you add one; comment out next line if you want it tracked)
+#.clang-format
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+
+# --- Archives ---
+*.tar
+*.gz
+*.zip
